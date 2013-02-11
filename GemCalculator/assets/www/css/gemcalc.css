@@ -1,0 +1,11 @@
+img.sixtyfour {
+	width: 64px;
+	height: 64px;
+}
+
+.output {
+	margin-top: 10px;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}

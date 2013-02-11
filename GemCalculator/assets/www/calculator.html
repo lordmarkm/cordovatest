@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap</title>
+
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.0a1.min.css" />
+<link rel="stylesheet" href="css/gemcalc.css" />
+<script type="text/javascript" charset="utf-8" src="js/cordova-2.4.0.js"></script>
+<script src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery-mobile/jquery.mobile-1.0a1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/knockout-2.2.1.js" ></script>
+<script type="text/javascript" charset="utf-8" src="js/gemcalc.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" data-theme="a" id="home">
+		<div data-role="header">
+			<h1>Diablo 3 Gem AH calculator</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="cost-flawless">
+					<img src="images/fsquare_emerald.png" class="sixtyfour" />
+					<span>Flawless Square gem cost:</span>
+				</label>
+				<input type="number" id="cost-flawless" data-bind="value: costFlawless, valueUpdate: 'afterkeydown'"></input>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="cost-tome">
+					<img src="images/tome.png" class="sixtyfour" />
+					<span>Tome of Secrets cost:</span>
+				</label>
+				<input type="number" id="cost-tome" data-bind="value: costTome, valueUpdate: 'afterkeydown'"></input>
+			</div>
+			<div>
+				<img src="images/star_emerald.png" class="sixtyfour" />
+				<span>Minimum Star gem profit sell price:</span>
+				<br/> 
+				<div class="output" data-bind="text: sellProfit"></div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<p>(c) Mark</p>
+		</div>
+	</div>
+	
+</body>
+
+</html>
